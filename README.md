@@ -1,4 +1,4 @@
-[Link](./1.html)
+[Link](./index.html)
 
 ## Welcome to GitHub Pages
 
