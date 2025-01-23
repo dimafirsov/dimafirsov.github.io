@@ -1,31 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <title>CSS Transform Scale element to fit its parent</title>
-    <script src="scale2fit.js"></script>
-    <link rel="stylesheet" href="style.css"/>
-    <script>
-      (function(window) {
-        function main() {
-          const margin = 10;
-          requestAnimationFrame(function fitToParentOnResize() {
-            fitToParent(document.getElementById('element_to_scale'), margin);
-          });
-        }
-
-        window.addEventListener("DOMContentLoaded", main);
-        window.addEventListener("resize", main);
-      })(this);
-    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
   </head>
   <body>
-    <div id="container">
-      <div id="element_to_scale">
-        <h1>Lorem Ipsum</h1>
-        <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Original_Doge_meme.jpg" alt="doge" align="left" />
-        <h4>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h4>
-        <h5>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</h5>
-      </div>
-    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
